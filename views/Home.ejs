@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        border: 5px solid white;
+
+    }
+   h1{
+       font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+       font-size: 50px;
+       letter-spacing: 0px;
+       word-spacing: 2px;
+       color: #C7D8CA;
+       font-weight: 700;
+       text-decoration: none;
+       font-style: normal;
+       font-variant: normal;
+       text-transform: none;
+   }
+
+   form {
+       margin:10% auto 0 auto;
+       padding:30px;
+       width:100%;
+       height:auto;
+       overflow:hidden;
+       background:none;
+       border-radius:10px;
+   }
+   form label {
+       font-size:30px;
+       color:darkgray;
+       cursor:pointer;
+   }
+   form label,
+   form input {
+       float:left;
+       clear:both;
+   }
+   form input {
+       margin:15px 0;
+       padding:15px 10px;
+       width:100%;
+       outline:none;
+       border:1px solid #bbb;
+       border-radius:20px;
+       display:inline-block;
+       -webkit-box-sizing:border-box;
+       -moz-box-sizing:border-box;
+       box-sizing:border-box;
+       -webkit-transition:0.2s ease all;
+       -moz-transition:0.2s ease all;
+       -ms-transition:0.2s ease all;
+       -o-transition:0.2s ease all;
+       transition:0.2s ease all;
+   }
+   select {
+       display: block;
+       font-size: 16px;
+       font-family: sans-serif;
+       font-weight: 700;
+       color: #444;
+       line-height: 1.3;
+       padding: .6em 1.4em .5em .8em;
+       width: 100%;
+       max-width: 100%;
+       box-sizing: border-box;
+       margin: 0;
+       border: 1px solid #aaa;
+       border-radius: .5em;
+   }
+
+   input[type=submit] {
+       padding:15px 50px;
+       width:auto;
+       background:#1abc9c;
+       border:none;
+       color:white;
+       cursor:pointer;
+       display:inline-block;
+       float:right;
+       clear:right;
+       -webkit-transition:0.2s ease all;
+       -moz-transition:0.2s ease all;
+       -ms-transition:0.2s ease all;
+       -o-transition:0.2s ease all;
+       transition:0.2s ease all;
+   }
+   input[type=submit]:hover {
+       opacity:0.8;
+   }
+
+   input[type="submit"]:active {
+       opacity:0.4;
+   }
+
+   @import url(https://fonts.googleapis.com/css?family=Lato:900);
+   *, *:before, *:after{
+       box-sizing:border-box;
+   }
+   body{
+       font-family: 'Lato', sans-serif;
+       height: 100%;
+       background-color: #39163b;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       margin: 0;
+       font-weight: 400;
+       font-size: 10px;
+   }
+   div.foo{
+       margin: 0 auto;
+       font-family:'Lily Script One', cursive;
+       font-size: auto;
+       text-align:center;
+   }
+   .letter{
+       display: inline-block;
+       font-weight: 900;
+       font-size: 8em;
+       margin: 0.2em;
+       position: relative;
+       color: #ffffff;
+       transform-style: preserve-3d;
+       perspective: 400;
+       z-index: 1;
+   }
+   .letter:before, .letter:after{
+       position:absolute;
+       content: attr(data-letter);
+       transform-origin: top left;
+       top:0;
+       left:0;
+   }
+   .letter, .letter:before, .letter:after{
+       transition: all 0.3s ease-in-out;
+   }
+   .letter:before{
+       color: #f15b40;
+       text-shadow:
+               -1px 0px 1px #58595b,
+               1px 0px 1px #000000;
+       z-index: 3;
+       transform:
+               rotateX(0deg)
+               rotateY(-15deg)
+               rotateZ(0deg);
+   }
+   .letter:after{
+       color: black;
+       z-index:2;
+       transform:
+               scale(1.08,1)
+               rotateX(0deg)
+               rotateY(0deg)
+               rotateZ(0deg)
+               skew(0deg,1deg);
+   }
+   .letter:hover:before{
+       color: #9e0b0f;
+       transform:
+               rotateX(0deg)
+               rotateY(-40deg)
+               rotateZ(0deg);
+   }
+   .letter:hover:after{
+       transform:
+               scale(1.08,1)
+               rotateX(0deg)
+               rotateY(40deg)
+               rotateZ(0deg)
+               skew(0deg,22deg);
+   }
+
+   </style>
+
+    </style>
+</head>
+<body>
+<div class="foo">
+    <span class="letter" data-letter="M">M</span>
+    <span class="letter" data-letter="o">o</span>
+    <span class="letter" data-letter="n">n</span>
+    <span class="letter" data-letter="g">g</span>
+    <span class="letter" data-letter="o">o</span>
+    <span class="letter" data-letter="d">d</span>
+    <span class="letter" data-letter="b">b</span>
+    <span class="letter" data-letter="D">D</span>
+    <span class="letter" data-letter="a">a</span>
+    <span class="letter" data-letter="t">t</span>
+    <span class="letter" data-letter="a">a</span>
+    <span class="letter" data-letter="b">b</span>
+    <span class="letter" data-letter="a">a</span>
+    <span class="letter" data-letter="s">s</span>
+    <span class="letter" data-letter="e">e</span>
+    <span class="letter" data-letter="V">V</span>
+    <span class="letter" data-letter="i">i</span>
+    <span class="letter" data-letter="e">e</span>
+    <span class="letter" data-letter="w">w</span>
+    <span class="letter" data-letter="e">e</span>
+    <span class="letter" data-letter="r">r</span>
+</div>
+<div class="container">
+    <center>
+    <h1>Güncelleye veya Yakala</h1>
+        <hr>
+    <h1>Güncellenecek veri</h1>
+    <form action="/push" method="POST">
+        <label>Ad:</label>
+        <input type="text" name="myname" placeholder="ad">
+        <label>numarası:</label>
+        <input type="text" name="myroll" placeholder="numara">
+        <label>takım adı:</label>
+        <input type="text" name="myteam" placeholder="takımadı">
+        <input type="submit" name="submit" value="Submit" >
+    </form>
+    <h1>Veri Yakalama </h1>
+    <form action="/find" method="POST">
+        <label>Aranan Veri tipi</label>
+        <select name="value">
+            <option value="Name">ad</option>
+            <option value="Rollno">numara</option>
+            <option value="Teamname">Takımadı</option>
+        </select>
+        <br><br>
+        <label> Veri gir:</label>
+        <input type="text" name="search" placeholder="Veri">
+        <input type="submit" name="submit" value="Find" >
+    </form>
+    <h1>Veri silme </h1>
+    <form action="/delete" method="POST">
+        <label>Silinecek veri tipi</label>
+        <select name="value_1">
+            <option value="Name">Ad</option>
+            <option value="Rollno">numara</option>
+            <option value="Teamname">takım adı</option>
+        </select>
+        <br><br>
+        <label>Silinecek Veri:</label>
+        <input type="text" name="deliii" placeholder="Veri bilgisi">
+        <input type="submit" name="submit" value="Delete" >
+    </form>
+    <h1>Veri Güncelleme </h1>
+    <form action="/update" method="POST">
+        <label>Veri tipi Seç:</label>
+        <select name="value__2">
+            <option value="Name">Ad</option>
+            <option value="Rollno">numara</option>
+            <option value="Teamname">takım adı</option>
+        </select>
+        <br><br>
+        <label > Eski veri : </label>
+        <input type="text" name="old" placeholder="Eski veri">
+        <br><br>
+        <label>Yeni veri</label>
+        <input type="text" name="up" placeholder="Değer gir">
+        <input type="submit" name="submit" value="Update" >
+    </form>
+</center>
+<center>
+<h1> <%= student %></h1>
+</center>
+</div>
+</body>
+</html>

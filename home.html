@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mefkar Crud</title>
+    <link rel="stylesheet" type="text/css" href="mon.css">
+</head>
+<body>
+<div class="foo">
+    <span class="letter" data-letter="M">M</span>
+    <span class="letter" data-letter="o">o</span>
+    <span class="letter" data-letter="n">n</span>
+    <span class="letter" data-letter="g">g</span>
+    <span class="letter" data-letter="o">o</span>
+    <span class="letter" data-letter="d">d</span>
+    <span class="letter" data-letter="b">b</span>
+    <span class="letter" data-letter="D">D</span>
+    <span class="letter" data-letter="a">a</span>
+    <span class="letter" data-letter="t">t</span>
+    <span class="letter" data-letter="a">a</span>
+    <span class="letter" data-letter="b">b</span>
+    <span class="letter" data-letter="a">a</span>
+    <span class="letter" data-letter="s">s</span>
+    <span class="letter" data-letter="e">e</span>
+    <span class="letter" data-letter="V">V</span>
+    <span class="letter" data-letter="i">i</span>
+    <span class="letter" data-letter="e">e</span>
+    <span class="letter" data-letter="w">w</span>
+    <span class="letter" data-letter="e">e</span>
+    <span class="letter" data-letter="r">r</span>
+</div>
+<div class="container">
+    <center>
+    <h1>Yükleme Yakalama Güncelleme Silme </h1>
+        <hr>
+    <h1>Veri yükleme </h1>
+    <form action="/push" method="POST">
+        <label>Ad</label>
+        <input type="text" name="myname" placeholder="İsim gir">
+        <label>numra:</label>
+        <input type="text" name="myroll" placeholder="Numara gir">
+        <label>Takım adı</label>
+        <input type="text" name="myteam" placeholder="Takım adı gir">
+        <input type="submit" name="submit" value="Submit" >
+    </form>
+    <h1>Veri yakalama </h1>
+    <form action="/find" method="POST">
+        <label>Veritipini seç:</label>
+        <select name="value">
+            <option value="Name">adı</option>
+            <option value="Rollno">numarası</option>
+            <option value="Teamname">takım adı</option>
+        </select>
+        <br><br>
+        <label> Veriyi gir</label>
+        <input type="text" name="search" placeholder="Veri bilgisi">
+        <input type="submit" name="submit" value="Find" >
+    </form>
+    <h1>Veri silme </h1>
+    <form action="/delete" method="POST">
+        <label>Veri tipini seçin</label>
+        <select name="value_1">
+            <option value="Name">adı</option>
+            <option value="Rollno">numarası</option>
+            <option value="Teamname">takım adı</option>
+        </select>
+        <br><br>
+        <label>Silinicek veriyi gir</label>
+        <input type="text" name="deliii" placeholder="Silinecek veri">
+        <input type="submit" name="submit" value="Delete" >
+    </form>
+    <h1>Uptade işlemi: </h1>
+    <form action="/update" method="POST">
+        <label>veri tipini seç</label>
+        <select name="value__2">
+            <option value="Name">Adı</option>
+            <option value="Rollno">Numarası</option>
+            <option value="Teamname">Takım adı</option>
+        </select>
+        <br><br>
+        <label >Değiştirilecek veri:</label>
+        <input type="text" name="old" placeholder="Eski veri">
+        <br><br>
+        <label>Yeni veri:</label>
+        <input type="text" name="up" placeholder="Yeni veriyi gir">
+        <input type="submit" name="submit" value="Update" >
+    </form>
+</center>
+<center>
+<h1> <%= student %></h1>
+</center>
+</div>
+</body>
+</html>
